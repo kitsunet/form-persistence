@@ -27,7 +27,7 @@ prototype(PunktDe.Form.Persistence:Backend.FormData.Index) < prototype(Neos.Fusi
                 }
             }
 
-            deleteButton = Neos.Fusion:Fragment {
+            deleteButton = Neos.Fusion:Component {
                 renderer = afx`
                     <button class="neos-button neos-button-danger" title={I18n.translate('PunktDe.Form.Persistence:Modules.FormPreview:entry.delete.tooltip')} data-toggle="modal" href={'#user-' + iterator.index} data-neos-toggle="tooltip">
                         <i class="fas fa-trash-alt icon-white"></i>
